@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex grow e flex shrink</title>
+
+    <style>
+        .container{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: lightgreen;
+            text-align: center;
+            flex-basis: 100px;
+            border: black 2px solid;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+        }
+
+    </style>
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="item">conteúdo do item a</div>
+        <div class="item">conteúdo do item b</div>
+        <div class="item" style="align-self: flex-end;">conteúdo do item c</div>
+        <div class="item">conteúdo do item d</div>
+        <div class="item" style="align-self: stretch;">conteúdo do item e</div>
+        <div class="item">conteúdo do item f</div>
+        <div class="item">conteúdo do item g</div>
+    </div>
 </body>
 </html>
